@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>STUDENT DASHBOARD</title>
+
+  <style>
+        body{
+              font-family: Arial;
+              background-color: #f0f4f8;
+              margin:0;
+              padding:30px;
+        }
+        
+        .dashboard{
+        
+             width:500px;
+             margin:50px auto; 
+             padding: 25px; 
+             background-color: white;
+             border-radius: 8px; 
+             box-shadow: 0 0 10px #CCC; 
+        }
+        
+        h1,h3{
+            text-align: center; 
+            color: #333;
+            
+        }
+        
+        p{
+             text-align: center;
+             color: green;
+        }
+        
+        ul{
+            background-color: #f5f5f5; 
+            padding:20px 40px; 
+            border-radius: 5px;
+        }
+        
+        li{
+            padding:8px; 
+            color: #444;
+        }
+        
+        a{ 
+            display: block;  
+            text-align:center;
+            margin-top: 20px; 
+            color: #007bff; 
+            text-decoration: none; 
+          }
+          
+        a:hover{
+             text-decoration: underline; 
+        }
+        
+        button{
+            width:100%;
+            padding:10px;
+            margin-top: 15px; 
+            background-color: #dc3545; 
+            color:white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        button:hover{
+            background-color: #b02a37;
+        }
+  </style>
+</head>
+<body>
+
+     <div class="dashboard">
+              <h1>Welcome Student</h1>
+              <h3>Student Dashboard</h3>
+              
+              <p> You have Student Access</p>
+              
+              <ul>
+                 <li>View Student Information</li>
+                 <li>Student Courses</li>
+                 <li>View Results</li>
+              </ul>
+                            
+              <form th:action="@{/}" method:"post">
+                  <button type="submit">Logout</button>
+              </form>
+     </div>
+
+</body>
+</html>

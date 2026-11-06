@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+
+    <style>
+       body{ 
+              font-family: Arial;
+              background-color: #e1e1e1;
+           }
+           
+        h1{
+            text-align: center; 
+            color: #333;
+            
+        }
+        
+        p{
+             text-align: center;
+             color: green;
+        }
+        
+         a{ 
+            display: block;  
+            text-align:center;
+            margin-top: 20px; 
+            color: #007bff; 
+            text-decoration: none; 
+          }
+          
+        a:hover{
+             text-decoration: underline; 
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Student Management System</h1>
+    
+    <p>Welcome to Student Management System</p>
+    
+    
+    <a th:href="@{/login}">Login Here</a>
+
+</body>
+</html>
